@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-2xl`}>
             Software Developer building scalable systems. <br className='sm:block hidden' />
-            I specialize in Java Spring Boot, Microservices, and Cloud-Native backend engineering.
+            I specialize in Java Spring Boot, Microservices, and Cloud-Native backend— with frontend proficiency.
           </p>
 
           <div className="mt-5 sm:mt-8 flex flex-wrap gap-4">
