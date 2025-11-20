@@ -38,6 +38,8 @@ import prithviImage from './feedback-user-dp/Prithvi-JFT.jpg'
 import khushbooImage from './feedback-user-dp/Khushboo-JFT.png'
 import rajeswarImage from './feedback-user-dp/Rajeswar-JFT.jpg'
 
+import leetcode from "./leetcode.svg";
+
 export {
   logo,
   backend,
@@ -73,5 +75,6 @@ export {
   aws,
   gcp,
   azure,
-  spring
+  spring,
+  leetcode
 };
