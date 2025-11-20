@@ -1,4 +1,3 @@
-import { BallCanvas } from "./canvas"
 import { styles } from '../style';
 import { motion } from 'framer-motion'
 import { SectionWrapper } from "../hoc"
@@ -10,7 +9,7 @@ import Tilt from 'react-tilt'
 const TechCard = ({ index, name, icon }) => {
   return (
     <motion.div 
-      variants={fadeIn("up", "spring", 0.3 * index, 0.6)} 
+      variants={fadeIn("up", "spring", 0.1 * index, 0.2)}
       className="w-20" // smaller width here, adjust as needed
     >
       <Tilt
@@ -51,4 +50,4 @@ const Tech = () => {
 
 }
 
-export default SectionWrapper(Tech, '')
+export default SectionWrapper(Tech, 'skills')

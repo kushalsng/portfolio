@@ -1,6 +1,8 @@
-import {useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+
+import { toast } from 'sonner';
 
 import { styles } from '../style'
 import { EarthCanvas } from './canvas'
@@ -9,16 +11,16 @@ import { slideIn } from '../utils/motion'
 
 const Contact = () => {
   const formRef = useRef()
-  const [ form, setForm ] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: ""
   })
-  const [ loading, setLoading ] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({...form, [name]: value});
+    setForm({ ...form, [name]: value });
   }
 
   const handleSubmit = (e) => {
@@ -26,19 +28,19 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
-        to_name: "Kushal",
+        to_name: "Kushal Singh",
         from_email: form.email,
         to_email: 'singhkushal635@gmail.com',
         message: form.message,
       },
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.')
+      toast.success('Thank you. I will get back to you as soon as possible.')
       setForm({
         name: "",
         email: "",
@@ -47,7 +49,7 @@ const Contact = () => {
     }).catch((err) => {
       setLoading(false);
       console.error(err);
-      alert('Something went wrong')
+      toast.error('Something went wrong')
     })
   }
 
