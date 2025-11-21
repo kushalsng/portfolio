@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
+import ErrorBoundary from '../ErrorBoundary'
 
 const Earth = () => {
   const earth = useGLTF('./planet/scene.gltf')
@@ -20,7 +21,7 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop='demand'
-      gl={{preserveDrawingBuffer: true}}
+      gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
         near: 0.1,
@@ -32,10 +33,12 @@ const EarthCanvas = () => {
         <OrbitControls
           autoRotate
           enableZoom={false}
-          maxPolarAngle={Math.PI/2}
-          minPolarAngle={Math.PI/2}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+        <ErrorBoundary>
+          <Earth />
+        </ErrorBoundary>
       </Suspense>
     </Canvas>
   )

@@ -32,10 +32,11 @@ const Hero = () => {
             </a>
 
             <a
-              href="#contact"
-              className="px-3 py-1 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-base font-medium border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition flex items-center gap-2"
+              href="/kushal-singh-resume.pdf"
+              download="Kushal Singh Resume.pdf"
+              className="px-3 py-1 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-base font-medium border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-300 hover:bg-gray-100 hover:text-black transition flex items-center gap-2"
             >
-              Contact Me <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6" />
+              <Download className="w-4 h-4 sm:w-6 sm:h-6" /> Resume
             </a>
             {/* <a
               href="/kushal-singh-resume.pdf"
@@ -48,7 +49,7 @@ const Hero = () => {
 
           <div className="mt-4 sm:mt-6 flex gap-4">
             <a href="https://github.com/kushalsng" target="_blank" rel="noopener noreferrer" className="text-secondary text-sm sm:text-base hover:text-white transition-colors">
-              <Github className="w-4 h-4 sm:w-6 sm:h-6"/>
+              <Github className="w-4 h-4 sm:w-6 sm:h-6" />
             </a>
             <a href="https://linkedin.com/in/kushalsng" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-white transition-colors">
               <Linkedin className="w-4 h-4 sm:w-6 sm:h-6" />

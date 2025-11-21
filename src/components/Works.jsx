@@ -37,7 +37,7 @@ const ProjectCard = ({index, name, description, tags, image,  source_code_link, 
         <div className='mt-5'>
         <h3 onClick={() => deployed_link && window.open(deployed_link, "_blank")} className='flex items-center text-white font-bold text-[24px] cursor-pointer'>
           {name}
-          <img src={redirect} alt="github" className='mx-2 w-[1rem] h-[1rem] object-contain' />
+          {deployed_link && <img src={redirect} alt="github" className='mx-2 w-[1rem] h-[1rem] object-contain' />}
         </h3>
         <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>

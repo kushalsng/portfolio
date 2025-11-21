@@ -30,9 +30,14 @@ import jft from "./company/jft-logo.png";
 import quadb from "./company/quadb-logo.png";
 import irh from "./company/ironrodhealth_logo.jpg";
 
-import howdy from "./howdy.png"
-import cryptoanalysis from "./cryptoanalysis.png"
-import buyout from "./buyout.png"
+import howdy from "./projects/howdy.png";
+import cryptoanalysis from "./projects/cryptoanalysis.png";
+import buyout from "./projects/buyout.png";
+import corporateAi from "./projects/corporate-ai.png";
+import courseCloud from "./projects/course-cloud.png";
+import healthsyncGateway from "./projects/healthsync-gateway.png";
+import stockOverflow from "./projects/stock-overflow.png";
+import linkedinReplier from "./projects/linkedin-replier-ai-chrome-extension.png";
 
 import prithviImage from './feedback-user-dp/Prithvi-JFT.jpg'
 import khushbooImage from './feedback-user-dp/Khushboo-JFT.png'
@@ -68,6 +73,11 @@ export {
   howdy,
   cryptoanalysis,
   buyout,
+  corporateAi,
+  courseCloud,
+  healthsyncGateway,
+  stockOverflow,
+  linkedinReplier,
   redirect,
   prithviImage,
   khushbooImage,

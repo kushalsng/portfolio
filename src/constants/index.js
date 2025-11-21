@@ -19,7 +19,11 @@ import {
   threejs,
   howdy,
   cryptoanalysis,
-  buyout,
+  corporateAi,
+  stockOverflow,
+  linkedinReplier,
+  courseCloud,
+  healthsyncGateway,
   khushbooImage,
   prithviImage,
   rajeswarImage,
@@ -134,18 +138,19 @@ const experiences = [
     icon: irh,
     iconBg: "#000",
     date: "July 2024 - Present",
+    company_landing_url: "https://ironrod.health",
     points: [
-      "Created an HL7 parser to extract and transform healthcare data from HL7 documents into JSON format, improving data interoperability.",
-      "Applied functional programming principles using Ramda to enhance code maintainability and readability.",
-      "Designed and implemented an extract, transform, and load (ETL) process to streamline data workflows.",
-      "Developed a configurable architecture enabling dynamic UI component customization from a centralized settings page, increasing flexibility.",
-      "Engineered business workflow automation to reduce manual intervention and increase operational efficiency in complex processes.",
-      "Independently managed full project lifecycle including frontend, backend, and automation components, ensuring seamless integration and delivery.",
+      "Reduced data extraction time by 60% and improved patient-data accuracy by building a production-grade HL7 parser in Spring Boot using Java Streams to convert HL7 files into JSON.",
+      "Increased throughput and scalability for healthcare workloads by architecting a configuration-driven data ingestion engine for CSV/JSON inputs (100k+ records) using Reactor Core streams and PostgreSQL.",
+      "Cut manual configuration effort by 70–80% by designing dynamic JSON-based configurations and a settings UI to customize data mappings and tables without code changes.",
+      "Reduced repetitive manual operations by 70–80% while preserving edge-case review by implementing a rules engine automating 200+ patient, device, and inventory workflows as Azure Functions.",
+      "Improved deployment reliability and release speed by leading DevOps efforts with Terraform, Firebase, Azure Functions, Blob Storage, queues, Docker, and YAML-based CI/CD pipelines.",
     ],
   },
   {
     title: "Software Engineer",
     company_name: "Jellyfish Technologies",
+    company_landing_url: "https://www.jellyfishtechnologies.com/",
     icon: jft,
     iconBg: "#000",
     date: "May 2023 - June 2024",
@@ -161,6 +166,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company_name: "Jellyfish Technologies",
+    company_landing_url: "https://www.jellyfishtechnologies.com/",
     icon: jft,
     iconBg: "#000",
     date: "November 2022 - April 2023",
@@ -174,6 +180,7 @@ const experiences = [
   {
     title: "Backend Web Developer Intern",
     company_name: "QuadB Technologies",
+    company_landing_url: "https://quadbtech.com/",
     icon: quadb,
     iconBg: "#fff",
     date: "June 2021 - October 2021",
@@ -215,9 +222,118 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Corporate.AI",
+    description:
+      "A full-stack RAG application for corporate knowledge management. Users upload documents and query them using natural language. Built with Spring Boot, Spring AI, and PostgreSQL (pgvector), it ensures accurate, context-aware responses grounded in proprietary data.",
+    tags: [
+      {
+        name: "spring-boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: corporateAi,
+    source_code_link: "https://github.com/kushalsng/corporate.ai",
+  },
+  {
+    name: "LinkedIn AI Replier Chrome Extension",
+    description:
+      "Streamline your LinkedIn messaging experience by providing AI-generated replies to your messages. No more struggling to find the right words – let AI do the heavy lifting for you!",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "green-text-gradient",
+      },
+      {
+        name: "plasmo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: linkedinReplier,
+    source_code_link: "https://github.com/kushalsng/linkedin-reply-chrome-extension",
+  },
+  {
+    name: "Stock Overflow",
+    description:
+      "High-performance microservices platform for real-time bidding. Leverages Reactive Programming (WebFlux) and Apache Kafka for low-latency, high-concurrency traffic. Containerized with Docker and orchestrated via Spring Cloud for scalability and fault tolerance.",
+    tags: [
+      {
+        name: "microservices",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "kafka",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: stockOverflow,
+    source_code_link: "https://github.com/kushalsng/stock-overflow",
+  },
+  {
+    name: "Course Cloud",
+    description:
+      "Scalable E-Learning Platform using Microservices. Features independent services for User Management, Courses, and Billing, communicating via REST and RabbitMQ. Includes Service Discovery, API Gateway, and Circuit Breakers for high availability.",
+    tags: [
+      {
+        name: "spring-cloud",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rabbitmq",
+        color: "green-text-gradient",
+      },
+      {
+        name: "microservices",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: courseCloud,
+    source_code_link: "https://github.com/kushalsng/course-cloud",
+  },
+  {
+    name: "HealthSync Gateway",
+    description:
+      "Secure microservices platform for healthcare data integration. Bridges modern apps with legacy systems, ensuring HIPAA compliance. Features include data normalization, audit logging, and legacy system simulation, powered by Spring Cloud.",
+    tags: [
+      {
+        name: "healthcare",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "spring-cloud",
+        color: "green-text-gradient",
+      },
+      {
+        name: "compliance",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: healthsyncGateway,
+    source_code_link: "https://github.com/kushalsng/healthsync-gateway",
+  },
+  {
     name: "Howdy Chat App",
     description:
-      "Web-based responsive social platform that allows users interact with each other, create groups to make a collective plans. Backed with seamless features like typing and emoji keyboard to improve the overall experience. One can reply to or send multiple type of messages like, text, audio, image or any other type",
+      "Web-based social platform that allows users interact or create groups to make a collective plans. Backed with seamless features like typing and emoji keyboard to improve the overall experience. Multiple message type supported like, text, audio, image etc.",
     tags: [
       {
         name: "react",
@@ -239,53 +355,6 @@ const projects = [
     image: howdy,
     source_code_link: "https://github.com/kushalsng/howdy",
     deployed_link: "https://howdy-there.onrender.com",
-  },
-  {
-    name: "Crypto Analysis",
-    description:
-      "Web-based responsive cryptocurrency tracking website built using React. It allows users to view current prices and information about various cryptocurrencies. Also, users can authenticate using custom sign in or Google authentication, add coins to a watchlist, with all data being stored in a Firebase database.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "materialui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: cryptoanalysis,
-    source_code_link: "https://github.com/kushalsng/crypto-analysis",
-    deployed_link: "https://crypto-analysis-info.netlify.app",
-  },
-  {
-    name: "Buy Out",
-    description:
-      "Built a secure ecommerce platform with login/logout functionality. Utilized bcrypt.js for password encryption and cookies for token management. Integrated messaging stored in the database for communication. Designed an intuitive UI with ReactJS's Material UI. Deployed on a reliable hosting platform for accessibility.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "materialui",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "express",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: buyout,
-    source_code_link: "https://github.com/kushalsng/eCommerceWebApp",
   },
 ];
 
