@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="mt-5 sm:mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-3 py-1 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-base font-medium bg-purple-500 text-white shadow-lg shadow-purple-600/30 hover:bg-purple-600 transition"
+              className="px-3 py-1 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-base font-medium bg-purple-700 text-white shadow-lg shadow-purple-800/30 hover:bg-purple-800 transition"
             >
               View Projects
             </a>
