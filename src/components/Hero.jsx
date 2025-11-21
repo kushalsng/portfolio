@@ -32,14 +32,14 @@ const Hero = () => {
             </a>
 
             <a
-              href="/kushal-singh-resume.pdf"
+              href="/Kushal Singh Resume.pdf"
               download="Kushal Singh Resume.pdf"
               className="px-3 py-1 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-base font-medium border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-300 hover:bg-gray-100 hover:text-black transition flex items-center gap-2"
             >
               <Download className="w-4 h-4 sm:w-6 sm:h-6" /> Resume
             </a>
             {/* <a
-              href="/kushal-singh-resume.pdf"
+              href="/Kushal Singh Resume.pdf"
               download="Kushal Singh Resume.pdf"
               className="flex items-center gap-2 border border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-primary transition-colors"
             >

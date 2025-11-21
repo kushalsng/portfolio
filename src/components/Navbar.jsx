@@ -44,7 +44,7 @@ const Navbar = () => {
               key={'download-resume'}
               className={`hidden sm:inline-block rounded-lg  text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}
             >
-              <a href="/kushal-singh-resume.pdf" download="Kushal Singh Resume.pdf" className='flex items-center gap-2'>
+              <a href="/Kushal Singh Resume.pdf" download="Kushal Singh Resume.pdf" className='flex items-center gap-2'>
                 <Download size={18} />Resume
               </a>
             </li>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   key={"download-resume"}
                   className={`text-secondary font-poppins text-[16  px] font-medium cursor-pointer`}
                 >
-                  <a href="/kushal-singh-resume.pdf" download="Kushal Singh Resume.pdf" className='flex items-center gap-2'>
+                  <a href="/Kushal Singh Resume.pdf" download="Kushal Singh Resume.pdf" className='flex items-center gap-2'>
                     Resume <Download size={16} />
                   </a>
                 </li>
